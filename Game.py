@@ -62,7 +62,7 @@ class Game:
     def snake_is_eating(self) -> bool:
         return tuple(self.snake.head) == self.apple 
 
-    def run(self) -> None:
+    def run_console(self) -> None:
         running = True
         while running:
             sleep(1)
@@ -103,4 +103,4 @@ class Game:
 
 if __name__ == '__main__':
     game = Game()
-    game.run()
+    game.run_console()
